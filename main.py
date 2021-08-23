@@ -11,7 +11,7 @@ from wordcloud import WordCloud
 import warnings
 warnings.filterwarnings("ignore")
 
-api = NewsApiClient(api_key='f8d6d7b98fe44dd0b694f2cd247b41f5')
+api = NewsApiClient(api_key='###API-KEY####')
 res = api.get_everything(q='Russia', language='en', to="2021-08-21", from_param="2021-07-21",page=5)
 full_data = pd.io.json.json_normalize(res,'articles')
 
